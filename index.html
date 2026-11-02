@@ -3,189 +3,122 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#241424">
+<meta name="theme-color" content="#291728">
 <title>Our Little Forever · Baby & Nikelo</title>
 <style>
 *{box-sizing:border-box}
-:root{color-scheme:dark;--pink:#f3b2cd;--cream:#ffe8c5}
-body{margin:0;min-height:100dvh;background:radial-gradient(ellipse at 15% 0,#563047,transparent 60%),radial-gradient(ellipse at 100% 70%,#26363d,transparent 60%),#130f1d;color:#fff0e8;font-family:system-ui,sans-serif;padding:22px 15px}
+:root{color-scheme:dark}
+body{margin:0;min-height:100dvh;padding:22px 15px;background:radial-gradient(ellipse at top left,#563047,transparent 65%),#130f1d;color:#fff0e8;font-family:system-ui,sans-serif}
 main{max-width:680px;margin:24px auto}
-header{display:flex;justify-content:space-between;gap:12px;font-size:10px;letter-spacing:2px;color:#d9acc5;margin-bottom:20px}
-article{border:1px solid #ffffff23;background:#ffffff06;border-radius:28px;padding:clamp(22px,5vw,40px);box-shadow:0 25px 100px #0004}
-h1{font:normal clamp(36px,7vw,55px)/1.12 Georgia,serif;margin:18px 0}
+header{display:flex;justify-content:space-between;gap:10px;color:#e0b0ca;font-size:10px;letter-spacing:2px;margin-bottom:20px}
+article{padding:clamp(22px,5vw,40px);border:1px solid #ffffff25;border-radius:28px;background:#ffffff06;box-shadow:0 25px 100px #0004}
+h1{font:normal clamp(35px,7vw,54px)/1.13 Georgia,serif;margin:18px 0}
 h2{font:normal 28px/1.3 Georgia,serif}
-p{font-size:16px;line-height:1.8;color:#dfcbda}
+p,label{font-size:16px;line-height:1.8;color:#dfcbda}
 small{font-size:10px;letter-spacing:2px;color:#e0adc7;line-height:1.8}
-button,input,textarea{font:inherit;border:1px solid #ffffff28;border-radius:13px;padding:15px}
-button{background:#ffffff08;color:#fff0e8;cursor:pointer;touch-action:manipulation;line-height:1.5;transition:background .15s,transform .15s}
-button:hover{background:#ffffff16}
-button:active{transform:scale(.985)}
-button:disabled{opacity:.42;cursor:default}
-button:focus-visible,input:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid #a8dfda;outline-offset:3px}
-.primary{display:block;background:linear-gradient(110deg,#ffe2b5,#f3a7cb);color:#321b30;border:0;font-weight:800;width:100%;margin-top:19px}
-.primary:hover{background:linear-gradient(110deg,#fff0d6,#ffc7df)}
+button,input,textarea{font:inherit;padding:15px;border:1px solid #ffffff28;border-radius:13px}
+button{color:#fff0e8;background:#ffffff08;cursor:pointer;touch-action:manipulation;line-height:1.5}
+button:hover{background:#ffffff15}
+button:disabled{opacity:.45;cursor:default}
+button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid #a8dfda;outline-offset:3px}
+.primary{display:block;width:100%;margin-top:19px;background:linear-gradient(110deg,#ffe2b5,#f3a7cb);border:0;color:#321b30;font-weight:800}
 .secondary{display:block;width:100%;margin-top:12px}
-input,textarea{width:100%;background:#0b091480;color:#ffeaf3;margin:12px 0}
-textarea{min-height:210px;font:17px/1.8 Georgia,serif;resize:vertical}
-label{display:block;line-height:1.8;color:#edc7da}
-.note{font:italic 20px/1.75 Georgia,serif;padding:20px;border-left:2px solid #f1b4cf;background:#f1b4cf09;color:#ffe0ed;margin:22px 0}
-.letter{font:19px/1.9 Georgia,serif;color:#f9deeb}
-.quiet{font-size:12px;line-height:1.8;color:#bea5ba}
-.progress{height:4px;border-radius:8px;background:#ffffff12;margin-bottom:22px;overflow:hidden}
-#bar{display:block;height:100%;background:linear-gradient(90deg,#a9dfd8,#f5adc9);transition:width .4s;width:0}
-#message{min-height:42px;margin-top:17px;color:#f2d7a4;font-size:14px;line-height:1.7}
-footer{text-align:center;font-size:12px;line-height:1.8;color:#bfa0b9;margin:24px 0}
-figure{margin:25px 0;background:#fff4e8;padding:10px 10px 20px;border-radius:7px;box-shadow:0 15px 45px #0004}
-figure img{display:block;width:100%;max-height:440px;object-fit:contain;background:#e9ded4;border-radius:3px}
-figcaption{font:italic 18px/1.65 Georgia,serif;color:#714656;text-align:center;padding:16px 7px 0}
+input,textarea{width:100%;margin:12px 0;background:#0b091480;color:#ffeaf3}
+textarea{min-height:210px;resize:vertical;font:17px/1.8 Georgia,serif}
+label{display:block}
+.note{margin:22px 0;padding:20px;border-left:2px solid #f1b4cf;background:#f1b4cf09;color:#ffe0ed;font:italic 20px/1.75 Georgia,serif}
+.quiet{font-size:12px;line-height:1.8;color:#c1a7bd}
+.progress{height:4px;background:#ffffff12;border-radius:8px;margin-bottom:22px;overflow:hidden}
+#bar{display:block;height:100%;width:0;background:linear-gradient(90deg,#a9dfd8,#f5adc9)}
+figure{margin:25px 0;padding:10px 10px 20px;background:#fff4e8;border-radius:7px;box-shadow:0 15px 45px #0004}
+figure img{display:block;width:100%;max-height:450px;object-fit:contain;background:#e9ded4;border-radius:3px}
+figcaption{text-align:center;padding:16px 7px 0;color:#714656;font:italic 18px/1.65 Georgia,serif}
 figcaption small{display:block;color:#936276;font:9px system-ui,sans-serif;letter-spacing:2px;margin-bottom:10px}
-.whisper{text-align:center;color:#efbfd4;font:italic 17px/1.7 Georgia,serif;margin:22px 0}
 .choices{display:grid;gap:12px;margin:20px 0}
 .choices button{text-align:left}
-.panel{margin-top:25px;padding:22px;border:1px solid #ecb1ce40;border-radius:22px;background:#ecb1ce07}
-blockquote{white-space:pre-wrap;overflow-wrap:anywhere;font:italic 20px/1.8 Georgia,serif;margin:20px 0;color:#ffe4f0}
-details{margin-top:20px;border:1px solid #ffffff18;border-radius:15px;padding:15px}
-summary{cursor:pointer;font-size:12px;color:#dfbed3}
+.panel{padding:22px;margin-top:24px;border:1px solid #ecb1ce40;border-radius:22px;background:#ecb1ce07}
+#message,#setupStatus{min-height:30px;color:#f2d7a4;font-size:14px;line-height:1.8;margin-top:17px}
+.whisper{text-align:center;font:italic 17px/1.7 Georgia,serif;color:#efbfd4;margin:24px 0}
+footer{text-align:center;color:#bfa0b9;font-size:12px;line-height:1.8;margin:24px 0}
 .badge{display:inline-block;font-size:11px;padding:7px 11px;border-radius:20px;border:1px solid #ffffff20;margin:4px;color:#dbb4cc}
-#packStatus{font-size:12px;line-height:1.8;color:#edc6d9}
-.success{border-color:#a8dfda66;background:#a8dfda08}
-.hearts{text-align:center;font-size:35px;letter-spacing:14px;margin:15px}
-.row{display:flex;gap:10px;flex-wrap:wrap}
 .word-bank{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0}
-.word-bank button{padding:12px 16px}
-.coffee{display:flex;justify-content:center;gap:14px;margin:20px 0}
-.coffee div{flex:1;text-align:center;padding:17px 10px;border:1px solid #ffffff1f;border-radius:16px;background:#ffffff04;font-size:13px;line-height:1.8}
-.coffee span{display:block;font-size:30px}
-@media(max-width:420px){.panel{padding:17px}header{font-size:9px}}
-@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+.row{display:flex;flex-wrap:wrap;gap:10px}
+blockquote{white-space:pre-wrap;overflow-wrap:anywhere;color:#ffe4f0;font:italic 20px/1.8 Georgia,serif;margin:20px 0}
+.preview{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:20px 0}
+.preview img{width:100%;height:115px;object-fit:contain;border-radius:10px;background:#ffffff09}
+.letter{font:19px/1.9 Georgia,serif}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
 </style>
 </head>
 <body>
 <main>
-<header>
-<span>BABY × NIKELO</span>
-<span id="counter">A PRIVATE LITTLE MYSTERY</span>
-</header>
-
+<header><span>BABY × NIKELO</span><span id="counter">OUR LITTLE FOREVER</span></header>
 <div class="progress"><span id="bar"></span></div>
 <article id="card"></article>
-
-<footer>
-I love you. I miss you. You cross my mind more than you know. ♡
-</footer>
-
-<details id="packPanel">
-<summary>Prepare our photos · do this before hosting</summary>
-<p class="quiet">
-Select the six original photographs using their original filenames.
-Download the finished HTML and host that file.
-All six pictures will be embedded inside it.
-This preparation panel will disappear from the downloaded version.
-</p>
-<input id="photoFiles" type="file" accept="image/*" multiple
- aria-label="Choose the six original photos">
-<button class="secondary" id="downloadGame">
-Download the complete HTML with embedded photos
-</button>
-<div id="packStatus" role="status" aria-live="polite"></div>
-</details>
+<footer>I love you. I miss you. You cross my mind more than you know. ♡</footer>
 </main>
 
-<script id="photo-data" type="application/json">[]</script>
+<!-- The downloaded index.html stores all six Base64 photos here. -->
+<script id="embedded-photos" type="application/json">[]</script>
 
 <script>
 'use strict';
 
 const $=id=>document.getElementById(id);
-const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const reducedMotion=matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-const originals=[
+const photoInfo=[
 {
  file:'11C2F554-F51D-4B65-9B3A-5D54F1E0AF0A.JPG',
  alt:'Us sharing a kiss beside the pool',
- msg:'If a picture could feel like a hug, this would be mine. I miss holding you this close, Baby.'
+ message:'If a picture could feel like a hug, this would be mine. I miss holding you this close, Baby.'
 },
 {
  file:'9e98fc4e-179f-4915-b016-174d1a7296aa.JPG',
  alt:'Our red and blue handprint painting',
- msg:'Two colours. Two people. Something beautiful we made together. I treasure these little pieces of us.'
+ message:'Two colours. Two people. Something beautiful we made together. I treasure these little pieces of us.'
 },
 {
  file:'IMG_4517.JPEG',
  alt:'Our hands covered in paint while making art',
- msg:'The paint, the little mess, the time together — I wish I could step back into this moment with you.'
+ message:'The paint, the little mess, the time together — I wish I could step back into this moment with you.'
 },
 {
  file:'IMG_2183.jpeg',
  alt:'Us kissing in front of a green hedge',
- msg:'I look at us and wish I could reach through this picture and hold you again. I miss you, my love.'
+ message:'I wish I could reach through this picture and hold you again. I miss you, my love.'
 },
 {
  file:'IMG_3595.jpg',
  alt:'A keepsake photograph with our N and B initials',
- msg:'N + B. Such a tiny thing to write, and such a big feeling in my heart. Thank you for these memories.'
+ message:'N + B. Such a tiny thing to write, and such a big feeling in my heart. Thank you for these memories.'
 },
 {
  file:'IMG_4467.JPG',
  alt:'A close-up photograph of us sharing a kiss',
- msg:'Your face this close to mine is one of my favourite views. Until I can kiss you again: you are so loved.'
+ message:'Your face this close to mine is one of my favourite views. Until I can kiss you again: you are so loved.'
 }
 ];
-
-let packed=[];
-try{
- const data=JSON.parse($('photo-data').textContent);
- if(Array.isArray(data)){
-  packed=data.filter(p=>
-   p &&
-   typeof p.file==='string' &&
-   typeof p.src==='string' &&
-   p.src.startsWith('data:image/')
-  );
- }
-}catch{}
-
-function hasAllPhotos(){
- return originals.every(p=>
-  packed.some(e=>e.file.toLowerCase()===p.file.toLowerCase())
- );
-}
-
-let photos=[];
-function refreshPhotos(){
- photos=originals.map(photo=>{
-  const embedded=packed.find(
-   p=>p.file.toLowerCase()===photo.file.toLowerCase()
-  );
-  return {
-   ...photo,
-   src:embedded?embedded.src:'./'+encodeURIComponent(photo.file)
-  };
- });
-}
-refreshPhotos();
 
 const whispers=[
  'You crossed my mind again. You do that a lot. ♡',
  'I wish I could reach through this screen and hold your hand.',
- 'If you could hear my thoughts sometimes, you’d hear your name.',
  'I miss sharing the small things with you.',
  'Thank you for being part of my world, Baby.',
- 'There are still so many little moments I want to make with you.',
- 'Your love is something I appreciate, never something I want to take for granted.',
+ 'There are still so many moments I want to make with you.',
  'This is my little way of saying: I’m thinking of you. I love you.'
 ];
 
-const affection=[
+const loveNotes=[
  'Baby, I love how curious you are. I could spend so much time listening to the things that make your eyes light up.',
- 'There are so many things in this world to be fascinated by, and somehow you are still my favourite person to think about.',
- 'I miss you in the little pauses of my day. I wish I could be beside you for this, watching your face when the answer clicks.',
- 'I appreciate the way you think, the questions you ask, and the little unexpected things you notice.',
- 'Even when we’re apart, you are part of my day. In something I want to tell you, a picture I look back at, or a moment I wish we were sharing. I miss you, Baby.',
+ 'There are so many fascinating things in this world, and somehow you are still my favourite person to think about.',
+ 'I miss you in the little pauses of my day. I wish I could be beside you, watching your face when the answer clicks.',
+ 'I appreciate the way you think, the questions you ask, and the unexpected things you notice.',
+ 'Even when we’re apart, you are part of my day. In something I want to tell you, a picture I look back at, or a moment I wish we were sharing.',
  'Some of my favourite moments with you are the ones where we don’t need anything fancy. Just us, talking and laughing.',
  'I love your mind, Baby. But you never have to get an answer right to make me proud to love you.',
- '15 April. 15:30. A cappuccino for you and a latte for me. Our first coffee date at Manaka was really lovely for me, Baby. I love having that little beginning to look back on.',
- 'If I could choose where to spend an extra hour, being beside you would be very high on my list. I miss your company and the ordinary moments we get to make special together.',
+ '15 April. 15:30. A cappuccino for you and a latte for me. Our first coffee date at Manaka was really lovely for me. I love having that little beginning to look back on.',
+ 'If I could choose where to spend an extra hour, being beside you would be very high on my list. I miss your company.',
  'Ten envelopes later, my answer is still the same: I love you, I miss you, and I keep choosing you.'
 ];
 
@@ -193,18 +126,15 @@ const chapters=[
 {
  title:'The animal kingdom<br>has lost the plot.',
  tag:'TRIVIA · STRANGE BUT TRUE',
- kind:'quiz',
- question:'Which of these mammals can detect the tiny electrical signals produced by its prey?',
- options:['A platypus','A red panda','A giraffe','A koala'],
- correct:0,
- hint:'Think of the animal that looks like several animals assembled by committee.',
+ question:'Which mammal can detect tiny electrical signals produced by its prey?',
+ options:['A platypus','A red panda','A giraffe','A koala'],correct:0,
+ hint:'Think of an animal that looks like several animals assembled by committee.',
  explain:'A platypus! Receptors in its bill help it detect electrical signals from prey while foraging underwater.',
  joke:'A mammal with a duck-like bill, eggs, and electrical detection. Nature definitely said, “Let’s add one more feature.”'
 },
 {
  title:'A riddle for<br>your clever little brain.',
  tag:'RIDDLE 01 · THE UNLIKELY JOURNEY',
- kind:'written',
  question:'I can travel around the world while staying in a corner. What am I?',
  answers:['stamp','astamp','postagestamp','apostagestamp'],
  hint:'It stays attached to the corner of something you can send in the post.',
@@ -214,35 +144,31 @@ const chapters=[
 {
  title:'Space is being<br>dramatic again.',
  tag:'TRIVIA · A VERY STRANGE CLOCK',
- kind:'quiz',
  question:'Which planet takes longer to rotate once on its axis than it takes to complete one orbit around the Sun?',
- options:['Mars','Venus','Jupiter','Mercury'],
- correct:1,
- hint:'It’s the second planet from the Sun, with an extremely slow spin.',
- explain:'Venus. One rotation takes about 243 Earth days, while one orbit takes about 225 Earth days. “Rotation” here means a full turn relative to distant stars.',
+ options:['Mars','Venus','Jupiter','Mercury'],correct:1,
+ hint:'It’s the second planet from the Sun, with a very slow spin.',
+ explain:'Venus. One rotation takes about 243 Earth days, while one orbit takes about 225. Here a rotation means a full turn relative to distant stars.',
  joke:'And yet I can miss you after a completely ordinary Earth afternoon. Embarrassing behaviour from your boy.'
 },
 {
  title:'The case of<br>the missing cookie.',
  tag:'DETECTIVE PUZZLE · SOMEONE IS CRUMBY',
- kind:'quiz',
  question:'One of these three took the last cookie. Exactly ONE statement below is true. Who took it?',
  statements:[
   'Nikelo: “Mimi took it.”',
   'Baby: “I didn’t take it.”',
   'Mimi: “Nikelo is lying.”'
  ],
- options:['Nikelo took it','Baby took it','Mimi took it'],
- correct:1,
- hint:'Try assuming Baby took it. How many of the three statements would then be true?',
- explain:'Baby took it. Nikelo’s statement is false, Baby’s statement is false, and Mimi’s statement is true. Exactly one truth! Either other suspect would make two statements true.',
- joke:'The court sentences Baby to one imaginary forehead kiss. Nikelo has mysteriously volunteered to carry out the sentence.'
+ options:['Nikelo took it','Baby took it','Mimi took it'],correct:1,
+ hint:'Assume Baby took it. How many statements would then be true?',
+ explain:'Baby took it. Nikelo’s statement is false, Baby’s statement is false, and Mimi’s statement is true. Either other suspect would make two statements true.',
+ joke:'The court sentences Baby to one imaginary forehead kiss. Nikelo has volunteered to carry out the sentence.'
 },
 {
  title:'My feelings are clear.<br>My sentence isn’t.',
  tag:'LOVE GAME 01 · A PROMISE, SCRAMBLED',
- kind:'word-order',
- question:'Baby, my thoughts got tangled because I was thinking about you again. Use every word once to put my message back together.',
+ kind:'words',
+ question:'My thoughts got tangled because I was thinking about you again. Use every word once to put my message back together.',
  words:['Even','when','we’re','apart,','I’m','always','thinking','of','you.'],
  hint:'Begin with “Even”. The second half starts with “I’m”. Let the punctuation guide you.',
  explain:'“Even when we’re apart, I’m always thinking of you.” Distance can change where we are, but you still find your way into my day.',
@@ -251,41 +177,32 @@ const chapters=[
 {
  title:'The fruit bowl<br>has a plot twist.',
  tag:'TRIVIA · BOTANY IS A LITTLE CHAOTIC',
- kind:'quiz',
  question:'Which of these is botanically a berry?',
- options:['Strawberry','Raspberry','Banana','Blackberry'],
- correct:2,
+ options:['Strawberry','Raspberry','Banana','Blackberry'],correct:2,
  hint:'The everyday name of a fruit doesn’t always match its botanical classification. Think yellow.',
  explain:'A banana! Botanically, bananas are berries. Strawberries are accessory fruits, while raspberries and blackberries are aggregate fruits.',
- joke:'If you just stared at the screen and questioned everything, please know I would be right there doing it with you.'
+ joke:'If you just stared at the screen and questioned everything, I would be right there doing it with you.'
 },
 {
  title:'One cake.<br>One sneaky possibility.',
  tag:'THINK OUTSIDE THE BOX · THE BIRTHDAY PROBLEM',
- kind:'quiz',
- question:'You have one plain cylindrical cake. Without moving or stacking pieces, make EIGHT equal pieces using only THREE straight cuts. Which plan works?',
+ question:'Without moving or stacking pieces, divide a plain cylindrical cake into EIGHT equal pieces with THREE straight cuts. Which plan works?',
  options:[
-  'Make three vertical cuts through the centre.',
-  'Make two perpendicular vertical cuts, then one horizontal cut halfway up.',
-  'Make three parallel horizontal cuts.',
-  'It’s impossible without an extra cut.'
- ],
- correct:1,
+  'Three vertical cuts through the centre.',
+  'Two perpendicular vertical cuts, then one horizontal cut halfway up.',
+  'Three parallel horizontal cuts.',
+  'It is impossible.'
+ ],correct:1,
  hint:'You can cut horizontally through the cake, not just down through the top.',
- explain:'Two perpendicular vertical cuts make four equal quarters. One horizontal cut halfway up splits all four quarters into two equal layers: eight equal pieces.',
- joke:'Excellent. Eight pieces. One for you, one for me, and six for whatever romantic negotiations happen next.'
+ explain:'Two perpendicular vertical cuts make four equal quarters. A horizontal cut halfway up divides each quarter into two equal layers: eight pieces.',
+ joke:'One for you, one for me, and six for whatever romantic negotiations happen next.'
 },
 {
  title:'Two coffees.<br>One lovely beginning.',
  tag:'RIDDLE 02 · A LITTLE PIECE OF US',
- kind:'written',
  question:'On the fifteenth day of April, at half past three, two cups arrived: a cappuccino for you, a latte for me. I’m not either drink, but the place that held this little beginning of us. Six letters name me. Where were we?',
- answers:[
-  'manaka','manakacoffee','manakacoffees',
-  'manakacoffeeshop','manakacafe',
-  'atmanaka','manakacoffe'
- ],
- hint:'Our first coffee date: 15 April, 15:30. Your cappuccino, my latte. The place starts with M.',
+ answers:['manaka','atmanaka','manakacoffee','manakacoffees','manakacafe','manakacoffeeshop'],
+ hint:'Our first coffee date. 15 April, 15:30. Your cappuccino, my latte. The place starts with M.',
  explain:'Manaka. 15 April, at 15:30. You had a cappuccino, I had a latte, and I got a memory I still love thinking about. That first coffee date was really lovely for me, Baby.',
  joke:'Your order: cappuccino. My order: latte. My unrequested side order: wanting more time with you.'
 },
@@ -293,31 +210,31 @@ const chapters=[
  title:'The coffee-date<br>equation.',
  tag:'LOVE GAME 02 · MAKING TIME FOR US',
  kind:'number',
- question:'Imagine our next little coffee date: I spend half of our time listening to your stories, one third telling you how much I’ve missed you, and the remaining 10 minutes refusing to say goodbye. How many minutes does our date last?',
+ question:'Imagine our next coffee date: I spend half of our time listening to your stories, one third telling you how much I’ve missed you, and the remaining 10 minutes refusing to say goodbye. How many minutes does our date last?',
  value:60,
  hint:'One half plus one third is five sixths. The remaining one sixth equals 10 minutes.',
- explain:'60 minutes. Half is 30 minutes, one third is 20, and the remaining 10 makes 60 altogether. This is an imagined date — not a question about how long our real one lasted.',
- joke:'My calculation is correct. My ability to say goodbye to you on schedule remains deeply questionable.'
+ explain:'60 minutes. Half is 30, one third is 20, and the remaining 10 makes 60. This is an imagined date, not a question about how long our real one lasted.',
+ joke:'My calculation is correct. My ability to say goodbye to you on schedule remains questionable.'
 },
 {
  title:'The Department of<br>Suspiciously Cute Affairs.',
  tag:'FINAL CHALLENGE · AN EXTREMELY SERIOUS INSPECTION',
- kind:'quiz',
- question:'A clipboard-wielding pigeon blocks the final letter. “Follow the instruction exactly,” it says. “Press the button whose label has the same number of letters as LOVE.”',
- options:['HUGS','KISS ME','DARLING','US'],
- correct:0,
- hint:'It doesn’t say to press LOVE. Count the letters in each button label.',
- explain:'LOVE has four letters. HUGS also has four letters. You followed the instruction instead of getting distracted by the labels.',
+ question:'A clipboard-wielding pigeon blocks the final letter. “Press the button whose label has the same number of letters as LOVE.”',
+ options:['HUGS','KISS ME','DARLING','US'],correct:0,
+ hint:'It doesn’t say to press LOVE. Count the letters in each label.',
+ explain:'LOVE has four letters. HUGS also has four. You followed the instruction instead of getting distracted by the labels.',
  joke:'The pigeon stamps your paperwork: “ALREADY LOVED. EXCESSIVELY MISSED. FREQUENTLY THOUGHT ABOUT.”'
 }
 ];
 
-let stage=0;
-let locked=false;
-let view='intro';
-let photoOrder=[];
-let photoCheckpoints=new Set();
-let whisperBag=[];
+let embedded=[];
+try{
+ const data=JSON.parse($('embedded-photos').textContent);
+ if(Array.isArray(data))embedded=data;
+}catch{}
+
+let stage=0,view='intro',locked=false;
+let photoOrder=[],usedPhotos=new Set(),whisperBag=[];
 
 function shuffle(values){
  const a=[...values];
@@ -328,26 +245,169 @@ function shuffle(values){
  return a;
 }
 
-function nextWhisper(){
+function clean(text){
+ return text.toLowerCase().replace(/[^a-z0-9]/g,'');
+}
+
+function validEmbedded(data){
+ return photoInfo.every(p=>data.some(e=>
+  e && e.file===p.file &&
+  typeof e.src==='string' &&
+  /^data:image\/[a-z0-9.+-]+;base64,/i.test(e.src)
+ ));
+}
+
+function decodeImage(src){
+ return new Promise((resolve,reject)=>{
+  const image=new Image();
+  image.onload=()=>image.naturalWidth>0
+   ?resolve()
+   :reject(new Error('An image has no readable dimensions.'));
+  image.onerror=()=>reject(new Error('One of the photos could not be decoded.'));
+  image.src=src;
+ });
+}
+
+async function verifyPhotos(data){
+ if(!validEmbedded(data))throw new Error('All six photos must be embedded.');
+ for(const photo of photoInfo){
+  await decodeImage(data.find(e=>e.file===photo.file).src);
+ }
+}
+
+function readFile(file){
+ return new Promise((resolve,reject)=>{
+  const reader=new FileReader();
+  reader.onload=()=>resolve(reader.result);
+  reader.onerror=()=>reject(new Error('Could not read '+file.name));
+  reader.readAsDataURL(file);
+ });
+}
+
+function download(name,content,type){
+ const url=URL.createObjectURL(new Blob([content],{type}));
+ const link=document.createElement('a');
+ link.href=url;link.download=name;
+ document.body.append(link);link.click();link.remove();
+ setTimeout(()=>URL.revokeObjectURL(url),30000);
+}
+
+function setup(reason=''){
+ $('counter').textContent='PHOTO PREPARATION';
+ $('bar').style.width='0';
+ $('card').innerHTML=`
+  <small>PREPARE ONCE · THEN UPLOAD THE DOWNLOADED FILE</small>
+  <h1>Put our photos<br>inside the game.</h1>
+  <p>This preparation file needs your six photos.
+  It will create a new <b>index.html</b> with the actual pictures embedded inside its code.</p>
+  <p class="quiet">Nothing is uploaded by this page. Your browser reads the files and builds your download locally.</p>
+  <label for="files">Select all six original photographs:</label>
+  <input id="files" type="file" accept="image/*" multiple>
+  <p class="quiet" id="expected"></p>
+  <div class="preview" id="preview"></div>
+  <button class="primary" id="build" disabled>Download index.html</button>
+  <div id="setupStatus" role="status" aria-live="polite"></div>
+  <p class="quiet">Upload the downloaded <b>index.html</b> to GitHub Pages.
+  Do not upload this preparation file instead.</p>`;
+ $('expected').textContent='Expected filenames: '+photoInfo.map(p=>p.file).join(', ');
+ $('setupStatus').textContent=reason;
+
+ let ready=[];
+ let reading=false;
+
+ $('files').onchange=async()=>{
+  if(reading)return;
+  reading=true;
+  $('files').disabled=true;
+  $('build').disabled=true;
+  $('setupStatus').textContent='Reading and checking your six pictures…';
+  $('preview').replaceChildren();
+
+  try{
+   const selected=Array.from($('files').files);
+   const result=[];
+
+   for(const photo of photoInfo){
+    const file=selected.find(
+     f=>f.name.toLowerCase()===photo.file.toLowerCase()
+    );
+    if(!file)throw new Error('Please also select '+photo.file);
+    const src=await readFile(file);
+    result.push({file:photo.file,src});
+   }
+
+   await verifyPhotos(result);
+   ready=result;
+
+   result.forEach(p=>{
+    const image=document.createElement('img');
+    image.src=p.src;
+    image.alt=photoInfo.find(e=>e.file===p.file).alt;
+    $('preview').append(image);
+   });
+
+   $('build').disabled=false;
+   $('setupStatus').textContent=
+    'All six pictures are embedded and readable. Download index.html below. ♡';
+
+  }catch(error){
+   ready=[];
+   $('setupStatus').textContent=error.message;
+  }finally{
+   reading=false;
+   $('files').disabled=false;
+  }
+ };
+
+ $('build').onclick=async()=>{
+  $('build').disabled=true;
+  try{
+   await verifyPhotos(ready);
+
+   const clone=document.documentElement.cloneNode(true);
+   clone.querySelector('#embedded-photos').textContent=JSON.stringify(ready);
+   clone.querySelector('#card').replaceChildren();
+   clone.querySelector('#counter').textContent='OUR LITTLE FOREVER';
+   clone.querySelector('#bar').style.width='0';
+
+   const content='<!DOCTYPE html>\n'+clone.outerHTML;
+
+   /* Check the exported document really contains the image data. */
+   const exported=new DOMParser().parseFromString(content,'text/html');
+   const check=JSON.parse(exported.querySelector('#embedded-photos').textContent);
+   await verifyPhotos(check);
+
+   download('index.html',content,'text/html;charset=utf-8');
+
+   $('setupStatus').textContent=
+    'Your verified index.html is ready. Upload that downloaded file to GitHub. Open it locally first if you want to preview the finished game.';
+
+  }catch(error){
+   $('setupStatus').textContent=error.message;
+  }finally{
+   $('build').disabled=false;
+  }
+ };
+}
+
+function whisper(){
  if(!whisperBag.length)whisperBag=shuffle(whispers);
  return whisperBag.pop();
 }
 
-function resetPhotoStory(){
- photoOrder=shuffle(photos);
- photoCheckpoints=new Set();
-}
-
-/* Six photos, six checkpoints, no gallery or repeat:
-   opening → envelope 2 → 4 → 6 → 8 → ending. */
-function checkpoint(){
+function photoCheckpoint(){
  if(view==='intro')return 0;
  if(view==='question'&&[2,4,6,8].includes(stage))return stage/2;
  if(view==='ending')return 5;
  return null;
 }
 
-function photoElement(photo){
+function addPhoto(){
+ const point=photoCheckpoint();
+ if(point===null||usedPhotos.has(point))return;
+ usedPhotos.add(point);
+
+ const photo=photoOrder[point];
  const figure=document.createElement('figure');
  const image=document.createElement('img');
  image.src=photo.src;
@@ -357,22 +417,9 @@ function photoElement(photo){
  const caption=document.createElement('figcaption');
  const label=document.createElement('small');
  label.textContent='A LITTLE PIECE OF US';
- caption.append(label,document.createTextNode(photo.msg));
-
- image.onerror=()=>{
-  image.hidden=true;
-  label.textContent='A LITTLE NOTE FROM YOUR BOY';
- };
-
+ caption.append(label,document.createTextNode(photo.message));
  figure.append(image,caption);
- return figure;
-}
-
-function addCheckpointPhoto(){
- const point=checkpoint();
- if(point===null||photoCheckpoints.has(point)||!photoOrder[point])return;
- photoCheckpoints.add(point);
- $('photo-slot').append(photoElement(photoOrder[point]));
+ $('photo-slot').append(figure);
 }
 
 function screen(title,body,tag){
@@ -380,136 +427,107 @@ function screen(title,body,tag){
   ?'DATE NIGHT · '+stage+' / '+chapters.length
   :'A PRIVATE LITTLE MYSTERY';
  $('bar').style.width=stage/chapters.length*100+'%';
-
- $('card').innerHTML=
-  '<small id="screen-tag"></small><h1>'+title+'</h1>'+
-  '<div id="photo-slot"></div>'+body+
-  '<p class="whisper" id="whisper"></p>'+
-  '<div id="message" role="status" aria-live="polite"></div>';
-
- $('screen-tag').textContent=tag;
- addCheckpointPhoto();
- $('whisper').textContent=nextWhisper();
- window.scrollTo({top:0,behavior:reduce?'auto':'smooth'});
+ $('card').innerHTML=`
+  <small id="tag"></small>
+  <h1>${title}</h1>
+  <div id="photo-slot"></div>
+  ${body}
+  <p class="whisper" id="whisper"></p>
+  <div id="message" role="status" aria-live="polite"></div>`;
+ $('tag').textContent=tag;
+ $('whisper').textContent=whisper();
+ addPhoto();
+ window.scrollTo({top:0,behavior:reducedMotion?'auto':'smooth'});
 }
 
 function say(text){$('message').textContent=text}
-function clean(text){return text.toLowerCase().replace(/[^a-z0-9]/g,'')}
 
 function intro(){
- stage=0;
- locked=false;
- view='intro';
- resetPhotoStory();
+ stage=0;view='intro';locked=false;
+ usedPhotos=new Set();
+ photoOrder=shuffle(photoInfo.map(p=>({
+  ...p,src:embedded.find(e=>e.file===p.file).src
+ })));
 
  screen('Our little<br>forever.',`
   <p>Baby, I made us a little date you can open whenever you miss me.</p>
-
   <p>Ten envelopes. Strange-but-true trivia. Two playful riddles.
   A cookie crime. Two love games. And a pigeon with a clipboard.</p>
-
   <div class="note">
    I wish I could sit beside you, watch you think,
    hear you laugh, and steal a hug when the answer clicks.
    Until then, I put little pieces of my love in here.
    <br><br>— Your Nikelo ♡
   </div>
-
   <span class="badge">3 trivia rounds</span>
   <span class="badge">2 riddles</span>
   <span class="badge">2 love games</span>
   <span class="badge">3 other challenges</span>
-
-  <p class="quiet">
-   No countdown. No grades. Every answer comes with an explanation.
-   Ask for hints whenever you want.
-   Being loved is never a prize you have to earn.
-  </p>
-
-  <button class="primary" id="begin">
-   TAKE MY HAND. LET’S BEGIN ♡
-  </button>
+  <p class="quiet">No countdown. No grades.
+  Ask for hints whenever you want.
+  Being loved is never a prize you have to earn.</p>
+  <button class="primary" id="begin">TAKE MY HAND. LET’S BEGIN ♡</button>
  `,'THE TRIVIA DATE EDITION');
 
  $('begin').onclick=()=>{stage=1;render()};
 }
 
 function render(){
- locked=false;
- view='question';
- const chapter=chapters[stage-1];
+ view='question';locked=false;
+ const c=chapters[stage-1];
 
- screen(chapter.title,`
+ screen(c.title,`
   <p id="question"></p>
   <div id="extra"></div>
   <div id="controls"></div>
   <button class="secondary" id="hint">Whisper me a clue ♡</button>
- `,chapter.tag);
+ `,c.tag);
 
- $('question').textContent=chapter.question;
- $('hint').onclick=()=>say(chapter.hint);
+ $('question').textContent=c.question;
+ $('hint').onclick=()=>say(c.hint);
 
- if(chapter.statements){
+ if(c.statements){
   const note=document.createElement('div');
   note.className='note';
-  chapter.statements.forEach(text=>{
-   const line=document.createElement('div');
+  c.statements.forEach(text=>{
+   const line=document.createElement('p');
    line.textContent=text;
-   line.style.marginBottom='12px';
    note.append(line);
   });
   $('extra').append(note);
  }
 
- if(stage===8){
-  const cups=document.createElement('div');
-  cups.className='coffee';
-  cups.innerHTML=`
-   <div><span>☕</span>Baby’s cappuccino</div>
-   <div><span>☕</span>Nikelo’s latte</div>`;
-  $('extra').append(cups);
- }
-
- if(chapter.kind==='word-order')wordOrder(chapter);
- else if(chapter.options)choices(chapter);
- else written(chapter);
+ if(c.kind==='words')wordGame(c);
+ else if(c.options)choiceGame(c);
+ else writtenGame(c);
 }
 
-function choices(chapter){
+function choiceGame(c){
  const box=document.createElement('div');
  box.className='choices';
-
- shuffle(chapter.options.map((_,i)=>i)).forEach(index=>{
+ shuffle(c.options.map((_,i)=>i)).forEach(index=>{
   const button=document.createElement('button');
-  button.textContent=chapter.options[index];
-
+  button.textContent=c.options[index];
   button.onclick=()=>{
    if(locked)return;
-   if(index!==chapter.correct)button.disabled=true;
-   result(index===chapter.correct,chapter);
+   if(index!==c.correct)button.disabled=true;
+   result(index===c.correct,c);
   };
-
   box.append(button);
  });
-
  $('controls').append(box);
 }
 
-function written(chapter){
+function writtenGame(c){
  const label=document.createElement('label');
  label.htmlFor='answer';
- label.textContent=chapter.kind==='number'
-  ?'Your answer, in minutes'
-  :'Your answer';
+ label.textContent=c.kind==='number'?'Your answer, in minutes':'Your answer';
 
  const input=document.createElement('input');
- input.id='answer';
- input.autocomplete='off';
- input.placeholder=chapter.kind==='number'
-  ?'How many minutes?'
-  :'Your clever little theory…';
-
- if(chapter.kind==='number')input.inputMode='decimal';
+ input.id='answer';input.autocomplete='off';
+ input.placeholder=c.kind==='number'
+  ?'How many minutes?':'Your clever little theory…';
+ if(c.kind==='number')input.inputMode='decimal';
 
  const button=document.createElement('button');
  button.className='primary';
@@ -517,23 +535,15 @@ function written(chapter){
 
  function check(){
   if(locked)return;
-
   const value=input.value.trim();
-  if(!value){
-   say('Give me your best theory first, love. ♡');
-   return;
-  }
-
-  let correct=false;
-  if(chapter.kind==='number'){
+  if(!value){say('Give me your best theory first, love. ♡');return}
+  let correct;
+  if(c.kind==='number'){
    const number=value.toLowerCase()
     .replace(/\bminutes?\b|\bmins?\b/g,'').trim();
-   correct=number!==''&&Number(number)===chapter.value;
-  }else{
-   correct=chapter.answers.includes(clean(value));
-  }
-
-  result(correct,chapter);
+   correct=number!==''&&Number(number)===c.value;
+  }else correct=c.answers.includes(clean(value));
+  result(correct,c);
  }
 
  button.onclick=check;
@@ -541,84 +551,59 @@ function written(chapter){
  $('controls').append(label,input,button);
 }
 
-function wordOrder(chapter){
- const solution=chapter.words;
- const bank=shuffle(solution.map((word,index)=>({word,index})));
+function wordGame(c){
  let chosen=[];
+ const bank=shuffle(c.words.map((word,index)=>({word,index})));
 
  $('controls').innerHTML=`
-  <div class="word-bank" id="word-bank"></div>
+  <div class="word-bank" id="bank"></div>
   <small>YOUR REPAIRED MESSAGE</small>
-  <div class="note" id="assembled" role="status" aria-live="polite">
-   Our sentence starts here…
-  </div>
+  <div class="note" id="sentence" role="status" aria-live="polite"></div>
   <div class="row">
-   <button id="undo-word">Undo last word ↶</button>
-   <button id="reset-words">Start again ♡</button>
+   <button id="undo">Undo last word ↶</button>
+   <button id="reset">Start again ♡</button>
   </div>
-  <button class="primary" id="check-words">
-   IS THIS WHAT YOU WANTED TO TELL ME? 💌
-  </button>`;
+  <button class="primary" id="checkWords">IS THIS WHAT YOU WANTED TO TELL ME? 💌</button>`;
 
  function paint(){
-  $('word-bank').replaceChildren();
-
+  $('bank').replaceChildren();
   bank.forEach(piece=>{
    const button=document.createElement('button');
    button.textContent=piece.word;
    button.disabled=locked||chosen.includes(piece.index);
-
    button.onclick=()=>{
     if(locked)return;
-    chosen.push(piece.index);
-    paint();
+    chosen.push(piece.index);paint();
    };
-
-   $('word-bank').append(button);
+   $('bank').append(button);
   });
-
-  $('assembled').textContent=chosen.length
-   ?chosen.map(index=>solution[index]).join(' ')
+  $('sentence').textContent=chosen.length
+   ?chosen.map(i=>c.words[i]).join(' ')
    :'Our sentence starts here…';
-
-  $('undo-word').disabled=locked||!chosen.length;
-  $('reset-words').disabled=locked||!chosen.length;
+  $('undo').disabled=locked||!chosen.length;
+  $('reset').disabled=locked||!chosen.length;
  }
 
- $('undo-word').onclick=()=>{
+ $('undo').onclick=()=>{if(!locked){chosen.pop();paint()}};
+ $('reset').onclick=()=>{if(!locked){chosen=[];paint()}};
+ $('checkWords').onclick=()=>{
   if(locked)return;
-  chosen.pop();paint();
- };
-
- $('reset-words').onclick=()=>{
-  if(locked)return;
-  chosen=[];paint();
-  say('A fresh little page. My feelings haven’t changed. ♡');
- };
-
- $('check-words').onclick=()=>{
-  if(locked)return;
-
-  if(chosen.length!==solution.length){
-   say('There are still pieces of my thoughts waiting for you. Use every word, love.');
-   return;
+  if(chosen.length!==c.words.length){
+   say('Use every little piece of my thoughts, love.');return;
   }
-
   const correct=chosen.every((index,position)=>index===position);
-  result(correct,chapter);
+  result(correct,c);
   if(correct)paint();
  };
-
  paint();
 }
 
-function result(correct,chapter){
+function result(correct,c){
  if(locked)return;
-
  if(!correct){
   say(shuffle([
    'A respectable theory. The envelope disagrees, but your boy still adores you. ♡',
-   'Not quite. There’s a little trick hiding here. Take another look.',
+   'Not quite. There’s a little trick hiding here.',
    'The imaginary pigeon raises an eyebrow. Try again, love.',
    'Good thing your kisses remain completely unaffected by wrong answers.'
   ])[0]);
@@ -627,45 +612,40 @@ function result(correct,chapter){
 
  locked=true;
  $('hint').disabled=true;
- $('controls').querySelectorAll('button,input').forEach(el=>el.disabled=true);
+ $('controls').querySelectorAll('button,input').forEach(e=>e.disabled=true);
  say('That’s it! I wish I could see your face right now. ♡');
 
  const panel=document.createElement('section');
- panel.className='panel success';
+ panel.className='panel';
  panel.innerHTML=`
   <small>THE LITTLE “AHA!” MOMENT</small>
   <h2>You found it. ♡</h2>
-  <p class="explanation"></p>
-  <div class="note joke"></div>
-  <button class="primary">OPEN THE LOVE NOTE INSIDE 💌</button>`;
+  <p id="explanation"></p>
+  <div class="note" id="joke"></div>
+  <button class="primary" id="openNote">OPEN THE LOVE NOTE INSIDE 💌</button>`;
 
- panel.querySelector('.explanation').textContent=chapter.explain;
- panel.querySelector('.joke').textContent=chapter.joke;
- panel.querySelector('button').onclick=loveNote;
+ panel.querySelector('#explanation').textContent=c.explain;
+ panel.querySelector('#joke').textContent=c.joke;
+ panel.querySelector('#openNote').onclick=loveNote;
  $('card').append(panel);
-
  panel.scrollIntoView({
-  behavior:reduce?'auto':'smooth',
-  block:'nearest'
+  behavior:reducedMotion?'auto':'smooth',block:'nearest'
  });
 }
 
 function loveNote(){
- view='love-note';
-
+ view='note';
  screen('One more reason<br>I adore you.',`
-  <div class="hearts" aria-hidden="true">♡ ✧ ♡</div>
-  <div class="note" id="affection"></div>
+  <div class="note" id="love"></div>
   <p>I wish I could be beside you for this part.
   Consider it the moment I pull you closer and ask, “Okay, one more?”</p>
   <button class="primary" id="next"></button>
  `,'ENVELOPE '+stage+' · OPENED');
 
- $('affection').textContent=affection[stage-1];
+ $('love').textContent=loveNotes[stage-1];
  $('next').textContent=stage===chapters.length
   ?'OPEN MY FINAL LETTER, BABY ♡'
   :'WHAT’S IN THE NEXT ENVELOPE? →';
-
  $('next').onclick=()=>{
   if(stage===chapters.length)ending();
   else{stage++;render()}
@@ -674,7 +654,6 @@ function loveNote(){
 
 function ending(){
  view='ending';
-
  screen('Baby,<br>it’s always you.',`
   <div class="letter">
    <p>I made you this little world because “I love you” is true,
@@ -685,8 +664,7 @@ function ending(){
    I wonder how your day is going.
    I look at our pictures and wish I could step into them for one more hug.</p>
 
-   <p>I miss your closeness, your company,
-   and the little moments that feel like us.
+   <p>I miss your closeness, your company, and the moments that feel like us.
    Even when we’re apart, you find your way into my day.</p>
 
    <div class="note">
@@ -715,16 +693,12 @@ function ending(){
 
    <p>There is no perfect answer you have to give to earn that.
    When this game ends, my love doesn’t.</p>
-
    <p>All my love,<br><b>Your Nikelo ♡</b></p>
   </div>
 
   <section class="panel">
    <small>ONE LAST ENVELOPE · THIS ONE IS YOURS</small>
    <h2>Our sacred little memory. 💌</h2>
-
-   <p>I’ve shared a few things I treasure.
-   Now spend a little time with a moment that lives in your heart.</p>
 
    <label for="memory">
     Baby, what is your favourite memory of us?
@@ -736,53 +710,44 @@ function ending(){
     placeholder="My favourite memory of us is…"></textarea>
 
    <p class="quiet">
-    This is your personal keepsake. Your words aren’t sent to Nikelo.
-    You can download a copy to keep somewhere special.
+    Your words aren’t sent to Nikelo.
+    You can download your own keepsake.
    </p>
 
-   <button class="primary" id="seal">
-    TUCK THIS INTO OUR LITTLE FOREVER ♡
-   </button>
-
+   <button class="primary" id="seal">TUCK THIS INTO OUR LITTLE FOREVER ♡</button>
    <p id="memoryStatus" role="status" aria-live="polite"></p>
    <div id="receipt"></div>
   </section>
 
-  <button class="secondary" id="again">
-   Visit our little world again ♡
-  </button>
+  <button class="secondary" id="again">Visit our little world again ♡</button>
  `,'TEN ENVELOPES · ONE VERY LOVED GIRL');
 
  $('counter').textContent='THE REASON WAS ALWAYS YOU';
  $('bar').style.width='100%';
-
  try{
   $('memory').value=localStorage.getItem('our-little-forever-memory')||'';
  }catch{}
-
  $('seal').onclick=sealMemory;
  $('again').onclick=intro;
 }
 
 function sealMemory(){
  const text=$('memory').value.trim();
-
  if(!text){
   $('memoryStatus').textContent=
    'Take your time, love. One tiny detail or a whole story — this page is yours.';
-  $('memory').focus();
-  return;
+  $('memory').focus();return;
  }
 
- let stored=false;
+ let saved=false;
  try{
   localStorage.setItem('our-little-forever-memory',text);
-  stored=true;
+  saved=true;
  }catch{}
 
- $('memoryStatus').textContent=stored
-  ?'A copy is saved in this browser. Download a keepsake too, so you can put it somewhere special.'
-  :'Your memory is ready. Download a keepsake below to keep your own copy.';
+ $('memoryStatus').textContent=saved
+  ?'A copy is saved in this browser. Download your keepsake too.'
+  :'Your keepsake is ready to download below.';
 
  $('receipt').innerHTML=`
   <small>A MEMORY WORTH TREASURING</small>
@@ -802,133 +767,38 @@ function sealMemory(){
   little moments I hope we get to make.</p>
 
   <p class="letter">Always yours,<br>Nikelo ♡</p>
-
-  <button class="secondary" id="saveMemory">
-   Save my memory as a keepsake 💌
-  </button>
-
-  <p class="quiet">
-   Browser storage can be cleared.
-   Keep your downloaded copy somewhere safe.
-  </p>`;
+  <button class="secondary" id="saveMemory">Save my memory as a keepsake 💌</button>
+  <p class="quiet">Browser storage can be cleared. Keep your downloaded copy somewhere safe.</p>`;
 
  $('quote').textContent=text;
-
- $('saveMemory').onclick=()=>{
-  download(
-   'Our-sacred-little-memory.txt',
-   'OUR SACRED LITTLE MEMORY\nBaby & Nikelo\n\n'+text+
-   '\n\nA NOTE FROM NIKELO\n\n'+
-   'Baby, keep that memory in a safe and sacred place, '+
-   'tucked somewhere tender in your heart, for eternity. ♡\n\n'+
-   'I love you. I miss you. I think about you so often.\n'+
-   'Thank you for the moments we get to call ours.\n\n'+
-   'Always yours,\nNikelo ♡',
-   'text/plain;charset=utf-8'
-  );
- };
+ $('saveMemory').onclick=()=>download(
+  'Our-sacred-little-memory.txt',
+  'OUR SACRED LITTLE MEMORY\nBaby & Nikelo\n\n'+text+
+  '\n\nA NOTE FROM NIKELO\n\n'+
+  'Baby, keep that memory in a safe and sacred place, '+
+  'tucked somewhere tender in your heart, for eternity. ♡\n\n'+
+  'I love you. I miss you. I think about you so often.\n'+
+  'Thank you for the moments we get to call ours.\n\n'+
+  'Always yours,\nNikelo ♡',
+  'text/plain;charset=utf-8'
+ );
 }
 
-function download(filename,content,type){
- const url=URL.createObjectURL(new Blob([content],{type}));
- const link=document.createElement('a');
-
- link.href=url;
- link.download=filename;
- document.body.append(link);
- link.click();
- link.remove();
-
- setTimeout(()=>URL.revokeObjectURL(url),30000);
-}
-
-/* Browser-based packing:
-   embeds the original image bytes as Base64 data URLs.
-   The downloaded HTML needs no separate photo files. */
-function readFile(file){
- return new Promise((resolve,reject)=>{
-  const reader=new FileReader();
-  reader.onload=()=>resolve(reader.result);
-  reader.onerror=()=>reject(new Error('Could not read '+file.name));
-  reader.readAsDataURL(file);
- });
-}
-
-let packing=false;
-
-$('photoFiles').onchange=async()=>{
- packing=true;
- $('downloadGame').disabled=true;
- $('packStatus').textContent='Reading your photographs…';
-
- try{
-  const files=Array.from($('photoFiles').files);
-  const result=[];
-
-  for(const photo of originals){
-   const file=files.find(
-    f=>f.name.toLowerCase()===photo.file.toLowerCase()
-   );
-
-   if(file){
-    const src=await readFile(file);
-    if(!src.startsWith('data:image/')){
-     throw new Error('Please choose an image file for '+photo.file);
-    }
-    result.push({file:photo.file,src});
-   }else{
-    const existing=packed.find(
-     e=>e.file.toLowerCase()===photo.file.toLowerCase()
-    );
-    if(existing)result.push(existing);
-   }
-  }
-
-  packed=result;
-  refreshPhotos();
-
-  $('packStatus').textContent=hasAllPhotos()
-   ?'All six photos are ready. Download your complete HTML below. ♡'
-   :'Loaded '+packed.length+' of 6. Select all six photos using their original filenames.';
-
- }catch(error){
-  $('packStatus').textContent=error.message;
- }finally{
-  packing=false;
-  $('downloadGame').disabled=false;
- }
-};
-
-$('downloadGame').onclick=()=>{
- if(packing)return;
-
- if(!hasAllPhotos()){
-  $('packStatus').textContent=
-   'Select all six original photos first so the hosted game includes every picture.';
+/* No local image paths or external photo requests are used.
+   The playable game starts only after embedded photos pass validation. */
+async function start(){
+ if(!validEmbedded(embedded)){
+  setup('Add the six photos once to build your hosting file.');
   return;
  }
-
- const clone=document.documentElement.cloneNode(true);
-
- clone.querySelector('#photo-data').textContent=JSON.stringify(packed);
- clone.querySelector('#card').replaceChildren();
- clone.querySelector('#counter').textContent='A PRIVATE LITTLE MYSTERY';
- clone.querySelector('#bar').style.width='0';
- clone.querySelector('#packStatus').textContent='';
- clone.querySelector('#packPanel').hidden=true;
-
- download(
-  'Our-little-forever-complete.html',
-  '<!DOCTYPE html>\n'+clone.outerHTML,
-  'text/html;charset=utf-8'
- );
-
- $('packStatus').textContent=
-  'Your complete game is ready to download, with all six photos inside its code. Upload the downloaded HTML as index.html. ♡';
-};
-
-if(hasAllPhotos())$('packPanel').hidden=true;
-intro();
+ try{
+  await verifyPhotos(embedded);
+  intro();
+ }catch(error){
+  setup('The embedded pictures could not be read. Please select the originals again. '+error.message);
+ }
+}
+start();
 </script>
 </body>
 </html>
